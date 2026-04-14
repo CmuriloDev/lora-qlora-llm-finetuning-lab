@@ -61,10 +61,10 @@ Generated dataset files (train.jsonl and test.jsonl)
 Training logs displayed in the terminal
 Observable loss progression during training
 Fine-tuned adapter stored in artifacts/lora/
-
+```
 ---
 
-Use of AI Tools
+## Use of AI Tools
 
 AI-assisted tools were used during development for:
 
@@ -74,6 +74,6 @@ Helping identify and resolve implementation issues
 
 All outputs were reviewed, validated, and adjusted manually by Carlos Murilo.
 
-Release
+## Release
 
 Version 1.0
