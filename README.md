@@ -1,82 +1,57 @@
-# LoRA and QLoRA Fine-Tuning Lab
+LoRA & QLoRA Fine-Tuning Project
+Project Description
 
-## Overview
+This repository contains an implementation of a lightweight fine-tuning workflow for language models using parameter-efficient techniques.
 
-This project implements a simplified pipeline for fine-tuning a language model using parameter-efficient techniques such as LoRA and QLoRA.
+The focus is to show how models can be adapted with reduced computational cost by combining LoRA with quantization strategies such as QLoRA.
 
-The goal is to demonstrate how large models can be adapted using low computational resources.
+Academic Context
 
----
+Course: Artificial Intelligence Topics
+Instructor: Dimmy Magalhães
+Institution: Faculdade iCEV
+Author: Carlos Murilo
 
-## Academic Information
+Main Goals
+Create a synthetic dataset for training
+Apply low-bit quantization (4-bit)
+Configure and integrate LoRA layers
+Perform supervised fine-tuning with TRL
+Export the trained adapter
+Tech Stack
+Python
+PyTorch
+Hugging Face Transformers
+PEFT
+TRL (Transformer Reinforcement Learning)
+BitsAndBytes
+Execution Guide
 
-Academic project for the course Artificial Intelligence Topics
-Professor: Dimmy Magalhães  
-Institution: Faculdade iCEV  
-Student: Carlos Murilo  
+Install the required dependencies:
 
----
-
-## Objectives
-
-* Generate a synthetic dataset
-* Apply 4-bit quantization (QLoRA)
-* Configure LoRA parameters
-* Train using SFTTrainer
-* Save the trained adapter
-
----
-
-## Technologies Used
-
-* Python
-* PyTorch
-* Hugging Face Transformers
-* PEFT (LoRA)
-* TRL
-* BitsAndBytes
-
----
-
-## How to Run
-
-Install dependencies:
-
-```bash
 pip install -r requirements.txt
-```
 
-Run:
+Run the full pipeline:
 
-```bash
 python main.py
-```
+Output Results
 
----
+After execution, the project should produce:
 
-## Expected Output
+Generated dataset files (train.jsonl and test.jsonl)
+Training logs displayed in the terminal
+Observable loss progression during training
+Fine-tuned adapter stored in artifacts/lora/
+Use of AI Tools
 
-* Dataset file created (`dataset.jsonl`)
-* Training logs printed
-* Loss decreasing during training
-* Adapter saved in `lora-adapter/`
+AI-assisted tools were used during development for:
 
----
+Supporting dataset generation structure
+Assisting in configuration of LoRA and QLoRA parameters
+Helping identify and resolve implementation issues
 
-## AI-Assisted Complementary Support
+All outputs were reviewed, validated, and adjusted manually by Carlos Murilo.
 
-AI tools were used to assist in:
+Release
 
-* Structuring the dataset generation logic
-* Clarifying configuration of LoRA and QLoRA parameters
-* Debugging minor issues in training setup
-
-All changes were reviewed, tested and validated by:
-
-Carlos Murilo Nogueira Portela
-
----
-
-## Version
-
-v1.0
+Version 1.0
